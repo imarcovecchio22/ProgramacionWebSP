@@ -1,0 +1,85 @@
+.menu {
+    width: 200px;
+    height: 100vh;
+    background-color: #6198bd;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    transition: width 0.3s; /* Agregar transición para animación */
+}
+
+.menu.collapsed {
+    width: 60px; /* Ancho del menú plegado */
+}
+
+.menu.collapsed ul {
+    display: none; /* Oculta la lista cuando está plegado */
+    margin-top: 10px;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 50px;
+}
+
+.menu ul li {
+    margin-bottom: 15px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    display: block;
+    padding: 10px;
+    transition: padding 0.3s;
+}
+
+.menu.collapsed a {
+    padding: 10px 0; /* Ajustar el relleno cuando está plegado */
+}
+
+.menu .toggle-button {
+    background: none;
+    border: none;
+    font-size: 1.5em;
+    cursor: pointer;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.menu.collapsed .toggle-button {
+    margin-left: 10px; /* Ajustar el margen izquierdo cuando está plegado */
+}
+
+.user-info-container {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.user-info {
+    margin-right: 10px;
+}
+
+.logout-button {
+    background-color: #ff0000;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.menu img.toggle-button {
+    width: 30px; /* Ajusta el ancho según sea necesario */
+    height: auto; /* Mantiene la proporción de la imagen */
+}

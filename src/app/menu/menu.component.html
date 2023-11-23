@@ -1,0 +1,18 @@
+<div class="menu" [ngClass]="{'collapsed': menuToggle}" >
+    <img class="toggle-button" src="assets/images/menu.png" alt="menu" (click)="toggleMenu()">
+    <ul>
+        <li *ngIf="!menuToggle"><a (click)="showGeneroComponent()">Verificar Género</a></li>
+        <li *ngIf="!menuToggle"><a (click)="showNacionalidadComponent()">Verificar Nacionalidad</a></li>
+        <li *ngIf="!menuToggle"><a routerLink="">Tools</a></li>
+    </ul>
+</div>
+
+<div class="user-info-container">
+    <div class="user-info">
+        {{ userEmail }}
+    </div>
+    <button class="logout-button" (click)="logout()">Logout</button>
+</div>
+
+<app-verificar-genero *ngIf="showGenero"></app-verificar-genero>
+<app-verificar-nacionalidad *ngIf="showNacionalidad"></app-verificar-nacionalidad>

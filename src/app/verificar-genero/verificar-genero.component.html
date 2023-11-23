@@ -1,0 +1,11 @@
+<div class="container">
+    <div class="content">
+      <input name="nombre" [(ngModel)]="nombre" placeholder="Ingrese un nombre">
+      <button (click)="verificarGenero()">Verificar Género</button>
+      <div *ngIf="generoResponse">
+        <p>Nombre: <span>{{ generoResponse.name }}</span></p>
+        <p>Género: <span>{{ generoResponse.gender }}</span></p>
+      </div>
+    </div>
+  </div>
+  

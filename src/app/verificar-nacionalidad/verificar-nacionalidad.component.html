@@ -1,0 +1,15 @@
+<div class="container">
+    <div class="content">
+    <input name="nombre" [(ngModel)]="nombre" placeholder="Ingrese un nombre">
+    <button (click)="verificarNacionalidad()">Verificar Nacionalidad</button>
+      <div *ngIf="nacionalidadResponse">
+        <p>Nombre: <span>{{ nacionalidadResponse.name }}</span></p>
+        <p>Nacionalidades: </p>
+        <ul>
+            <li *ngFor="let country of nacionalidadResponse.country">
+                {{country.country_id}} - Probability: {{country.probability}}
+            </li>
+        </ul>
+    </div>
+</div>
+</div>

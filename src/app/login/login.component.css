@@ -1,0 +1,43 @@
+.modern-login-container {
+    max-width: 300px;
+    margin: 100px auto;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(to bottom, #3498db, #2980b9);
+    color: #fff;
+    text-align: center;
+}
+
+.modern-login-container form {
+    margin-top: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.bold-label {
+    font-weight: bold;
+}
+
+.color-label {
+    color: #323131;
+}
+
+.btn-dark {
+    background-color: #34495e;
+    border-color: #2c3e50;
+}
+
+.error-message {
+    color: #e74c3c;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.logo {
+    width: 50px;  
+    height: 50px;
+    margin-bottom: 0px; 
+}

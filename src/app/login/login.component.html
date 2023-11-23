@@ -1,0 +1,17 @@
+<div class="modern-login-container">
+    <img src="assets/images/login.png" alt="Logo" class="logo">
+    <form [formGroup]="loginForm" (ngSubmit)="submitRegistration()">
+        <div class="form-group">
+            <label class="bold-label color-label">Correo electrónico</label>
+            <input type="text" class="form-control" formControlName="email" placeholder="Ingrese su email">
+        </div>
+        <div class="form-group">
+            <label class="bold-label color-label">Contraseña</label>
+            <input type="password" class="form-control" formControlName="password" placeholder="Ingrese su contraseña">
+        </div>
+        <button type="submit" class="btn btn-dark btn-block" [disabled]="showErrorMessage">Ingresar</button>
+    </form>
+    <div *ngIf="showErrorMessage" class="error-message">
+        Tus credenciales han sido bloqueadas debido a 3 intentos fallidos.
+    </div>
+</div>

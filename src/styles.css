@@ -1,1 +1,38 @@
-/* You can add global styles to this file, and also import other style files */
+@import '~ngx-toastr/toastr';
+
+
+.form-container {
+    max-width: 300px;
+    margin: 200px auto;
+    padding: 20px;
+    border: 1px solid #0eb511;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: rgb(148, 157, 219);
+}
+.form-container label.bold-label {
+    font-weight: bold;
+}
+
+.form-container label.color-label {
+    color: #ffffff; 
+}
+  
+.form-group {
+    margin-bottom: 15px;
+}
+  
+.form-control {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+  
+.form-control:focus {
+    outline: none;
+    border-color: #104177;
+}
+
+  
